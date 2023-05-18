@@ -1,0 +1,33 @@
+@media screen and (max-width: 1280px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search-bar .input-group {
+    position: relative;
+    width: 125%;
+    right: 0px;
+  }
+  .owl-carousel .owl-item img {
+    display: inline;
+    width: 12%;
+  }
+  .overview-place .carded p {
+    font-size: 12px;
+  }
+
+  .scroll-prompt .scroll-prompt-arrow > div {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .frame {
+    height: 50vh;
+  }
+  .frame .home-background h1 {
+    font-size: 52px;
+}
+}

@@ -1,0 +1,51 @@
+#frame {
+  height: 44vh;
+  width: 100%;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  animation: image 10s infinite alternate;
+  color: #fff;
+  border-radius: 0% 5% 5% 0% ;
+  color: #fff;
+}
+
+@keyframes image {
+  0% {
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(241, 236, 239, 0.3),
+        rgba(21, 21, 21, 0.3)
+      ),
+      url("../img/Thailand/1/Hat-Patong\,-Phuket.jpg");
+  }
+  50% {
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(241, 236, 239, 0.3),
+        rgba(21, 21, 21, 0.3)
+      ),
+      url("../img/Thailand/1/Phuket.jpg");
+  }
+  100% {
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(241, 236, 239, 0.3),
+        rgba(21, 21, 21, 0.3)
+      ),
+      url("../img/Thailand/1/phuket2.jpg");
+  }
+}
+#frame .home-background h4 {
+  font-size: 28px;
+}
+#frame .home-background h1 {
+  font-size: 72px;
+}

@@ -1,0 +1,189 @@
+/* Thailand Page Start */
+
+/* Home Start*/
+.thailand-home {
+  background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 109.56%
+    ),
+    url("../img/Thailand/thailand\ home\ banner.jpg");
+  background-size: 100%;
+  text-align: center;
+  padding: 13% 0 5% 0;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+.head-button span {
+  position: relative;
+  top: 8px;
+}
+/* Home End*/
+/* Thailand-content Start */
+.head-content {
+  font-size: 24px;
+}
+.ihp {
+  color: rgb(20, 128, 153);
+}
+/* Thailand-content End */
+/* Tour Packages Start */
+.tour-packages {
+  padding: 3% 0 0 0;
+  position: relative;
+}
+
+.ThailandTourPackagesPlan {
+  background: #0d6efd17;
+}
+.tour-packages .margins {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.tour-packages .margins:hover {
+  box-shadow: 0px 15px 50px 0px #70686842;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  bottom: 3px;
+}
+.tour-packages img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 10px;
+}
+.tour-packages .left-img {
+  width: 100%;
+  /* height: 54vh; */
+  border-radius: 3px 20px 20px 3px;
+}
+.tour-packages .content-section {
+  padding: 2% 0;
+  color: #2c2f6c;
+}
+.tour-packages .content-section ul li {
+  width: 90%;
+  text-align: justify;
+  list-style: none;
+}
+.tour-packages .content-section ul li span {
+  position: relative;
+  top: 6px;
+}
+.tour-package-card .row {
+  align-items: center;
+  padding: 0%;
+  justify-content: center;
+}
+.tour-packages .content-section ul {
+  list-style: none;
+}
+
+.include-activity h6 {
+  color: #888888;
+}
+.include-activity ul span {
+  color: #888888;
+}
+.include-activity ul span .tick {
+  color: #00b277;
+}
+.include-activity ul span .wrong {
+  color: #f04f67;
+}
+.include-activity ul span .material-symbols-outlined {
+  position: relative;
+  top: 6px;
+}
+.include-activity {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rate-deal {
+  padding: 0 35px 0 0;
+  text-align: end;
+}
+.rate-deal .view-deal {
+  background-color: #fd4c5c;
+  color: #fff;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100%;
+}
+.rate-deal .view-deal a {
+  color: #fff;
+  text-decoration: none;
+}
+.rate-deal p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.rate-deal p span {
+  font-size: 15px;
+  color: #999999;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+.rate-deal h6 strong {
+  color: #999999;
+  font-weight: 400;
+}
+.rate-deal h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5581b5;
+}
+/* Tour Packages End */
+/* Thailand Page End */
+
+/* Dubai HoneyMoon Start */
+/* Home Start*/
+.DubaiHoneyMoon .thailand-home {
+  background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 109.56%
+    ),
+    url("../img/dubai-honey-moon/jumeirah-mina-asalam-feature.webp");
+  background-size: 100%;
+  text-align: center;
+  padding: 13% 0 5% 0;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+.head-button span {
+  position: relative;
+  top: 8px;
+}
+/* Home End*/
+/* Dubai HoneyMoon End */
+
+/* Singapore HoneyMoon Start */
+/* Home Start*/
+.SingaporeHoneyMoon .thailand-home {
+  background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 109.56%
+    ),
+    url("../img/6d4ffc61dad883af598d8a773c70bdf4--boston-skyline-singapore-travel\ \(1\).jpg");
+  background-size: 100%;
+  text-align: center;
+  padding: 13% 0 5% 0;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+.head-button span {
+  position: relative;
+  top: 8px;
+}
+/* Home End*/
+/* Singapore HoneyMoon End */
+
+.content-section ul li {
+}
