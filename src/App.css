@@ -833,7 +833,7 @@
 }
 
 .media-img .img1 .comment ul li {
-  width: 100%;
+  width: 85%;
   text-align: justify;
   list-style: none;
 }
@@ -845,7 +845,32 @@
   padding: 5%;
 }
 
-.price-amount-head{
+.price-amount-head {
   display: flex;
   justify-content: space-around;
+}
+
+.rate-deals .view-deals {
+  background-color: #fd4c5c;
+  color: #fff;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 40%;
+}
+.rate-deals img {
+  width: 16% !important;
+  height: 8vh !important;
+  border-radius: 10px;
+}
+
+.view-deals .material-symbols-outlined{
+  padding: 0 10px;
+}
+.view-deals span{
+  padding: 0 10px;
+}
+.rate-price{
+  text-align: end;
 }

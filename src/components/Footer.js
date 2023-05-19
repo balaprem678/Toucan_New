@@ -20,9 +20,8 @@ function Footer() {
           <div className="col-lg-3 col-md-3 col-sm-12 footer-address-link">
             <h4>Office</h4>
             <p>
-              NO.36,First Floor,
+              No.36,First Floor,
               <br /> Medavakkam Main Rd,
-              <br /> Puzhuthivakkam,
               <br /> Madipakkam,
               <br />
               Chennai, Tamil Nadu 600091

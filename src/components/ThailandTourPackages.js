@@ -132,7 +132,9 @@ function ThailandTourPackages() {
                   <button
                     className="view-deal"
                     onClick={() =>
-                      Navigate(`/ThailandTourPackagesPlan1/${"thailand-6-day-package"}`)
+                      Navigate(
+                        `/ThailandTourPackagesPlan1/${"thailand-6-day-package"}`
+                      )
                     }
                   >
                     More Details

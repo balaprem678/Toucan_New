@@ -29,7 +29,7 @@ export default function Navigation() {
     <div className="navigation-bar">
       <nav class="navbar navbar-expand-lg black">
         <div class="container">
-          <a class="navbar-brand" href="#" alt="">
+          <a class="navbar-brand" href="" alt="">
             <img src={logo} alt="" />
           </a>
           <button
@@ -44,7 +44,7 @@ export default function Navigation() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <Link to={"/#"} className="nav-link">
+            <Link to={"/"} className="nav-link">
               Home
             </Link>
             {show && (
@@ -52,7 +52,6 @@ export default function Navigation() {
                 <li class="nav-item nav-item-1 dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -61,7 +60,7 @@ export default function Navigation() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <Link to={"/ThailandTourPackages"} className="nav-link">
+                      <Link to={"/Package"} className="nav-link">
                         <span>
                           <img src={thailand} alt="" />
                         </span>
@@ -105,7 +104,6 @@ export default function Navigation() {
                 <li class="nav-item nav-item-2 dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -158,7 +156,6 @@ export default function Navigation() {
                 <li class="nav-item nav-item-3 dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
