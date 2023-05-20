@@ -6,7 +6,6 @@ import "../css/Comman.css";
 import React, { useEffect, useState, useReducer } from "react";
 
 
-
 // useNavigate
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +15,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Enquiry from "./Enquiry";
 
-const Package = () => {
+const Honeymoon = () => {
   const { id } = useParams();
 
   const [reducerValue, forceUpdate] = useReducer((x) => x + 1, 0);
@@ -196,7 +195,7 @@ const Package = () => {
                       <h6> Per Person On Twin Sharing </h6>
                       <button
                         className="view-deal"
-                        onClick={() => Navigate(`/Packages/${data.id}`)}
+                        onClick={() => Navigate(`/Honeymoon/${data.id}`)}
                       >
                         {" "}
                         More Details
@@ -216,4 +215,4 @@ const Package = () => {
   );
 };
 
-export default Package;
+export default Honeymoon;

@@ -3,6 +3,7 @@
 
 .navigation-bar .black {
   background: rgb(51 51 51 / 17%);
+  color: #fff;
 }
 .navigation-bar {
   width: 100%;
@@ -12,9 +13,13 @@
 .blue {
   position: fixed;
   top: 0;
-  background: grey !important;
+  background: rgba(128, 128, 128, 0.164) !important;
+  color: #000;
   width: 100%;
   height: 50px;
+}
+.nav-link {
+  background: none !important;
 }
 /* Scroll bar End */
 .navigation-bar .navbar a img {
@@ -902,7 +907,8 @@
   bottom: 16px;
 }
 
-.modal.show .modal-dialog {
+/* Enquiry Form 1 start */
+/* .modal.show .modal-dialog {
   transform: none;
   padding: 4% 0 0 0 !important;
 }
@@ -926,4 +932,142 @@ text-align: center !important;
 .modal-header img {
   width: 100% !important;
   height: 8vh !important;
+} */
+
+/* Enquiry Form 1 End */
+
+/* Enquiry Form 1 Start */
+.modal.show .modal-dialog {
+  transform: none;
+  max-width: 60% !important;
 }
+.modal-body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px;
+}
+.modal-content {
+  position: relative;
+  top: 60px;
+}
+.modal-header {
+  border-bottom: none;
+  display: block;
+  text-align: center;
+}
+.modal-header h1 {
+  font-size: 25px;
+}
+.modal-body div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 0%;
+}
+.modal-body div.elem-group {
+  margin: 10px 0;
+}
+
+.modal-body label {
+  display: block;
+  font-family: "Nanum Gothic";
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+.modal-body input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: "Nanum Gothic";
+  width: 100%;
+  padding: 10px;
+}
+
+.modal-body div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+.modal-body textarea {
+  height: 250px;
+}
+
+.modal-body hr {
+  border: 1px dotted #ccc;
+}
+
+.modal-body button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: "Nanum Gothic";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-body button:hover {
+  border: 2px solid black;
+}
+
+.modal-body label {
+  text-align: initial !important;
+}
+.modal-body input,
+select,
+textarea {
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid #77777738;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: initial;
+  width: 100%;
+  padding: 5px;
+}
+
+.modal-header .btn-close {
+  position: relative;
+  bottom: 12px;
+}
+#checkout-date,
+#checkin-date {
+  color: #757575;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+.modal-footer .btn-primary {
+  width: 40%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: inherit;
+  background: #fd4c5c;
+  position: relative;
+  bottom: 16px;
+}
+
+.modal-header-footer img {
+  width: 30% !important;
+  height: 15vh !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+.modal.show .modal-footer-content {
+  transform: none;
+  max-width: 60% !important;
+    text-align: center;
+}
+.modal.show .modal-footer-dialog-centered {
+  transform: none;
+  max-width: 60% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+/* Enquiry Form End */

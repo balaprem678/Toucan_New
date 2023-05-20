@@ -14,6 +14,7 @@ import ThailandTourPackages from "./components/ThailandTourPackages";
 
 import Packages from "./components/Packages";
 import Package from "./components/Package";
+import Enquiry from "./components/Enquiry";
 
 export default function Routeslist() {
   return (
@@ -28,11 +29,11 @@ export default function Routeslist() {
             path="/ThailandTourPackages"
             element={<ThailandTourPackages />}
           />
-          {/* <Route path="/Package" element={<Package />} /> */}
 
           <Route path="/Packages/:id" element={<Packages />} />
 
           <Route path="/Package/:id" element={<Package />} />
+          <Route path="/Enquiry" element={<Enquiry />} />
 
         </Routes>
       </BrowserRouter>

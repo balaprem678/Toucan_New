@@ -108,9 +108,11 @@
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
           if (scroll > 300) {
-            $(".black").css("background", "#FFFAFA");
+            $(".black").css("background", "#FAEBD7");
+            $(".black").css("color", "#000");
           } else {
-            $(".black").css("background", "#D3D3D3");
+            $(".black").css("background", "rgba(128, 128, 128, 0.164)");
+            $(".black").css("color", "#fff");
           }
         });
       });

@@ -39,7 +39,7 @@ export default function Navigation() {
     <div className="navigation-bar">
       <nav class="navbar navbar-expand-lg black">
         <div class="container">
-          <a class="navbar-brand" href="" alt="">
+          <a class="navbar-brand" href="/" alt="">
             <img src={logo} alt="" />
           </a>
           <button
@@ -61,7 +61,7 @@ export default function Navigation() {
               <ul class="navbar-nav">
                 <li class="nav-item nav-item-1 dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle black"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -70,39 +70,23 @@ export default function Navigation() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      {/* <Link
-                        // to={() => Navigate("/Package/thailand")}
-                        onClick={() => Navigate("/Package/thailand")}
-                        className="nav-link"
-                      >
+                      <Link to={"/Package/thailand"} className="nav-link">
                         <span>
                           <img src={thailand} alt="" />
                         </span>
                         Thailand Tour package
-                      </Link> */}
-
-                      <button onClick={() => Navigate("/Package/thailand")}>
-                        Thailand Tour package
-                      </button>
+                      </Link>
                     </li>
                     <li>
-                      {/* <Link
-                        // to={() => Navigate("/Package/bali")}
-                        onClick={() => Navigate("/Package/bali")}
-                        className="nav-link"
-                      >
+                      <Link to={"/Package/bali"} className="nav-link">
                         <span>
                           <img src={dubai} alt="" />
                         </span>
                         Bali Tour package
-                      </Link> */}
-                      
-                      <button onClick={() => Navigate("/Package/bali")}>
-                        Bali Tour package
-                      </button>
+                      </Link>
                     </li>
                     <li>
-                      <Link to={"/MalaysiaTourPackages"} className="nav-link">
+                      <Link to={"/Package/bali"} className="nav-link">
                         <span>
                           <img src={Malaysian} alt="" />
                         </span>
@@ -110,7 +94,7 @@ export default function Navigation() {
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/SingaporeTourPackages"} className="nav-link">
+                      <Link to={"/Package/thailand"} className="nav-link">
                         <span>
                           <img src={Srilankha} alt="" />
                         </span>
@@ -129,7 +113,7 @@ export default function Navigation() {
                 </li>
                 <li class="nav-item nav-item-2 dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle black"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -138,7 +122,7 @@ export default function Navigation() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <Link to={"/ThailandHoneyMoon"} className="nav-link">
+                      <Link to={"/Honeymoon/thailand"} className="nav-link">
                         <span>
                           <img src={thailand_1} alt="" />
                         </span>
@@ -181,7 +165,7 @@ export default function Navigation() {
                 </li>
                 <li class="nav-item nav-item-3 dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle black"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
