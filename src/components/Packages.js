@@ -14,15 +14,13 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
 
-  
-
 const Packages = () => {
   const { id } = useParams();
   console.log(id);
   let isLoading = false;
 
-  let API =
-    `http://webapi.toucanleisures.com/package_details/${id}`;
+  let API = `http://webapi.toucanleisures.com/package_details/${id}`;
+
 
   const [mediaList1, setMediaList1] = useState([]);
 
@@ -70,16 +68,16 @@ const Packages = () => {
           <div className="container">
             <div className="tour-package-card">
               <div className="price-amount-head rates-deals">
-                <h3>{findDetails1[0].title}</h3>
-                <h2>{findDetails1[0].heading}</h2>
+                <h3>{findDetails1[0].heading}6 Days Plan</h3>
+                <h2>{findDetails1[0].title}</h2>
                 <div className="rate-price">
                   <h4>Super Deal Price</h4>
                   <h6>
                     <strong>Starts From</strong>
                   </h6>
                   <p>
-                    {findDetails1[0].price} /&nbsp;
-                    <span>{findDetails1[0].offer}/-</span>
+                    {findDetails1[0].offer} /&nbsp;
+                    <span>{findDetails1[0].price}/-</span>
                   </p>
                   <h6> Per Person On Twin Sharing </h6>
                 </div>
@@ -88,7 +86,7 @@ const Packages = () => {
                 // console.log(JSON.stringify(iten))
                 return (
                   <div className="row">
-                    <div className="col-lg-10 col-md-12 col-sm-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12">
                       <div className="container">
                         <div key={index} className="row media-page">
                           <div className="col-lg-4 col-md-8 col-sm-12 media-img">
@@ -98,7 +96,6 @@ const Packages = () => {
                             <div className="img1">
                               <div className="comment">
                                 <h5>{data.heading}</h5>
-                                
                                 <ul>
                                   <li>{data.description}</li>
                                 </ul>
@@ -157,7 +154,7 @@ const Packages = () => {
                                           <span class="material-symbols-outlined">
                                             calendar_month
                                           </span>
-                                          {data.day}
+                                          Day -{data.day}
                                         </button>
                                         <span>
                                           {data.transport ? (

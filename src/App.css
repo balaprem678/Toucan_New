@@ -832,8 +832,10 @@
   color: #fff;
 }
 
-.media-img .img1 .comment ul li {
+.media-img .img1 .comment {
   width: 85%;
+}
+.media-img .img1 .comment ul li {
   text-align: justify;
   list-style: none;
 }
@@ -848,8 +850,13 @@
 .price-amount-head {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
+.rate-deals {
+  justify-content: center;
+  display: flex;
+}
 .rate-deals .view-deals {
   background-color: #fd4c5c;
   color: #fff;
@@ -865,12 +872,58 @@
   border-radius: 10px;
 }
 
-.view-deals .material-symbols-outlined{
+.view-deals .material-symbols-outlined {
+  padding: 0 10px;
+  position: relative;
+  top: 5px;
+}
+.view-deals span {
   padding: 0 10px;
 }
-.view-deals span{
-  padding: 0 10px;
-}
-.rate-price{
+.rate-price {
   text-align: end;
+}
+
+.rate-price p span {
+  text-decoration: line-through;
+}
+.tour-package-card {
+  /* padding: 5%; */
+  border-radius: 25px;
+}
+
+.btn-primary {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: inherit;
+  background: #fd4c5c;
+  position: relative;
+  bottom: 16px;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  padding: 4% 0 0 0 !important;
+}
+.modal-body .m7 {
+  text-align: left !important;
+}
+form{
+  text-align: left;
+}
+form input{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+form textarea {
+  width: 100%;
+}
+.modal-body h1,
+.modal-body p {
+text-align: center !important;
+}
+.modal-header img {
+  width: 100% !important;
+  height: 8vh !important;
 }

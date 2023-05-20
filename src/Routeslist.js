@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  // BrowserRouter,
+  BrowserRouter,
   Routes,
   Route,
-  HashRouter,
+  // HashRouter,
 } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -18,7 +18,7 @@ import Package from "./components/Package";
 export default function Routeslist() {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Navigation" element={<Navigation />} />
@@ -28,14 +28,14 @@ export default function Routeslist() {
             path="/ThailandTourPackages"
             element={<ThailandTourPackages />}
           />
-          <Route path="/Package" element={<Package />} />
+          {/* <Route path="/Package" element={<Package />} /> */}
 
-          <Route
-            path="/Packages/:id"
-            element={<Packages />}
-          />
+          <Route path="/Packages/:id" element={<Packages />} />
+
+          <Route path="/Package/:id" element={<Package />} />
+
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

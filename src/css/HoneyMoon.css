@@ -103,6 +103,12 @@
   padding: 0 35px 0 0;
   text-align: end;
 }
+.rate-deal .view-deal:focus {
+ background-color: #0A58CA;
+}
+.rate-deal .view-deal:hover {
+ background-color: #000;
+}
 .rate-deal .view-deal {
   background-color: #fd4c5c;
   color: #fff;

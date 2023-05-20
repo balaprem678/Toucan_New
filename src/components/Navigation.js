@@ -4,6 +4,7 @@ import "../css/Comman.css";
 
 import logo from "../img/favicon.png";
 import { Link } from "react-router-dom";
+
 // Images
 import thailand from "../img/thailand.avif";
 import dubai from "../img/dubai.avif";
@@ -23,8 +24,17 @@ import Family_Packages from "../img/Family Packages.jpg";
 import Budget_Packages from "../img/Budget Packages.jpg";
 import Luxury_Packages from "../img/Luxury Packages.webp";
 
+import { useNavigate } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
+
 export default function Navigation() {
+  const { id } = useParams();
+  console.log(id);
+
   const [show] = useState(true);
+  let Navigate = useNavigate();
+
   return (
     <div className="navigation-bar">
       <nav class="navbar navbar-expand-lg black">
@@ -60,20 +70,36 @@ export default function Navigation() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <Link to={"/Package"} className="nav-link">
+                      {/* <Link
+                        // to={() => Navigate("/Package/thailand")}
+                        onClick={() => Navigate("/Package/thailand")}
+                        className="nav-link"
+                      >
                         <span>
                           <img src={thailand} alt="" />
                         </span>
                         Thailand Tour package
-                      </Link>
+                      </Link> */}
+
+                      <button onClick={() => Navigate("/Package/thailand")}>
+                        Thailand Tour package
+                      </button>
                     </li>
                     <li>
-                      <Link to={"/DubaiTourPackages"} className="nav-link">
+                      {/* <Link
+                        // to={() => Navigate("/Package/bali")}
+                        onClick={() => Navigate("/Package/bali")}
+                        className="nav-link"
+                      >
                         <span>
                           <img src={dubai} alt="" />
                         </span>
-                        Dubai Tour package
-                      </Link>
+                        Bali Tour package
+                      </Link> */}
+                      
+                      <button onClick={() => Navigate("/Package/bali")}>
+                        Bali Tour package
+                      </button>
                     </li>
                     <li>
                       <Link to={"/MalaysiaTourPackages"} className="nav-link">
