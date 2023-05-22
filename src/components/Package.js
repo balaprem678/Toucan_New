@@ -4,19 +4,21 @@ import "../css/Thailand.css";
 import "../css/Comman.css";
 
 import React, { useEffect, useState, useReducer } from "react";
-
-
+import DotLoader from "react-spinners/ClipLoader";
 
 // useNavigate
 import { useNavigate } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
 
+import { HashLink } from "react-router-hash-link";
+
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Enquiry from "./Enquiry";
 
 const Package = () => {
+  // const [loading, setLoading] = useState(false);
   const { id } = useParams();
 
   const [reducerValue, forceUpdate] = useReducer((x) => x + 1, 0);
@@ -39,6 +41,10 @@ const Package = () => {
   };
   useEffect(() => {
     fecthApiData(API);
+    // setLoading(true);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 5000);
   }, [reducerValue]);
 
   let findDetails = mediaList;
@@ -46,20 +52,30 @@ const Package = () => {
   let Navigate = useNavigate();
   return (
     <div className="ThailandTourPackages">
+      {/* {
+        // <DotLoader
+        //   color={"#FAEBD7"}
+        //   loading={loading}
+        //   // cssOverride={override}
+        //   size={100}
+        //   // aria-label="Loading Spinner"
+        //   // data-testid="loader"
+        // />
+      } */}
       <Navigation />
       <div className="thailand-home">
         <h1>Thailand Vacation Packages</h1>
         <p>
           Discover ancient ruins and relaxing beach resorts and buddhist temples
         </p>
-        <a href="#Tour-Packages">
+        <HashLink to="#Tour-Packages">
           <button className="head-button">
             View All Packages{" "}
             <span class="material-symbols-outlined">
-              keyboard_double_arrow_down
+              keyboard_double_arrow_down 
             </span>
           </button>
-        </a>
+        </HashLink>
       </div>
       <div className="Thailand-content margin">
         <div className="container">
@@ -95,7 +111,7 @@ const Package = () => {
 
       {findDetails.map((data, index) => {
         // console.log(JSON.stringify(iten))
-
+        document.title = findDetails[0].country;
         return (
           <div className="tour-packages" id="Tour-Packages">
             <div className="container ">
@@ -201,7 +217,7 @@ const Package = () => {
                         {" "}
                         More Details
                       </button>
-                      <Enquiry/>
+                      <Enquiry />
                     </div>
                   </div>
                 </div>

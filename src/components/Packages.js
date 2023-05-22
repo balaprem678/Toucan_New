@@ -3,6 +3,7 @@ import "../css/Comman.css";
 import "../css/HoneyMoon.css";
 
 import React, { useEffect, useState } from "react";
+import DotLoader from "react-spinners/ClipLoader";
 
 // images
 
@@ -14,13 +15,16 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
 
+import { HashLink } from "react-router-hash-link";
+
 const Packages = () => {
+  // const [loading, setLoading] = useState(false);
+
   const { id } = useParams();
   console.log(id);
   let isLoading = false;
 
   let API = `http://webapi.toucanleisures.com/package_details/${id}`;
-
 
   const [mediaList1, setMediaList1] = useState([]);
 
@@ -37,6 +41,10 @@ const Packages = () => {
   };
   useEffect(() => {
     fecthApiData(API);
+    // setLoading(true);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 5000);
   }, []);
 
   let findDetails1 = mediaList1;
@@ -44,27 +52,40 @@ const Packages = () => {
   if (findDetails1.length >= 1) {
     isLoading = true;
   }
+
   if (isLoading) {
+    document.title = findDetails1[0].country;
     return (
       <div className="ThailandTourPackagesPlan">
+        {/* {
+          <DotLoader
+            color={"#FAEBD7"}
+            loading={loading}
+            // cssOverride={override}
+            size={100}
+            // aria-label="Loading Spinner"
+            // data-testid="loader"
+          />
+        } */}
         <Navigation />
+
         <div className="thailand-home">
           <h4 className="head-2">Thailand Tour Packages Plan</h4>
           <h1 className="head-1">
             Discover ancient ruins and relaxing beach resorts and buddhist
             temples
           </h1>
-          <a href="">
+          <HashLink to="#Tour-Packages">
             <button className="head-button">
               View All Packages{" "}
               <span class="material-symbols-outlined">
                 keyboard_double_arrow_down
               </span>
             </button>
-          </a>
+          </HashLink>
         </div>
 
-        <div className="tour-packages">
+        <div className="tour-packages" id="Tour-Packages">
           <div className="container">
             <div className="tour-package-card">
               <div className="price-amount-head rates-deals">

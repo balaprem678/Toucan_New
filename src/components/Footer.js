@@ -20,19 +20,22 @@ function Footer() {
           <div className="col-lg-3 col-md-3 col-sm-12 footer-address-link">
             <h4>Office</h4>
             <p>
-              No.36,First Floor,
-              <br /> Medavakkam Main Rd,
+              No.36, Medavakkam Main Rd,
               <br /> Madipakkam,
               <br />
               Chennai, Tamil Nadu 600091
             </p>
-            <a href="mailto:admin@gmail.com">
+            <a href="mailto:toucanleisures@gmail.com">
               <i class="fa-solid fa-envelope"></i>&nbsp;
-              admin@gmail.com
+              toucanleisures@gmail.com
             </a>
             <br />
-            <a href="tel:9940147123">
-              <i class="fa-solid fa-phone"></i>&nbsp; 99401 47123
+            <a href="tel:94984 77950">
+              <i class="fa-solid fa-phone"></i>&nbsp; +91 94984 77950
+            </a>
+            <br />
+            <a href="tel:99627 22292">
+              <i class="fa-solid fa-phone"></i>&nbsp; +91 99627 22292
             </a>
           </div>
           <div className="col-lg-2 col-md-2 col-sm-12 footer-home-link">
@@ -88,6 +91,30 @@ function Footer() {
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="copy-rights">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12 copy-right-1">
+              <h6>
+                Copyright © 2023
+                <a href="https://www.toucanleisures.com/" target="_blank">
+                  toucanleisures.com
+                </a>
+                All Rights Reserved.
+              </h6>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12 copy-right-2">
+              <h6>
+                Powered By
+                <a href="https://www.eximho.com/" target="_blank">
+                  Eximho Private Limited
+                </a>
+              </h6>
             </div>
           </div>
         </div>

@@ -34,6 +34,7 @@ export default function Navigation() {
 
   const [show] = useState(true);
   let Navigate = useNavigate();
+  // const [loading, setLoading] = useState(false);
 
   return (
     <div className="navigation-bar">
@@ -70,7 +71,7 @@ export default function Navigation() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <Link to={"/Package/thailand"} className="nav-link">
+                      <Link to={"/Package/thailand"}  className="nav-link">
                         <span>
                           <img src={thailand} alt="" />
                         </span>
@@ -78,7 +79,7 @@ export default function Navigation() {
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/Package/bali"} className="nav-link">
+                      <Link to={"/Package/bali"}  className="nav-link">
                         <span>
                           <img src={dubai} alt="" />
                         </span>

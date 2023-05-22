@@ -5,6 +5,7 @@ import "../css/Comman.css";
 
 import React, { useEffect, useState, useReducer } from "react";
 
+import { HashLink } from "react-router-hash-link";
 
 // useNavigate
 import { useNavigate } from "react-router-dom";
@@ -38,9 +39,11 @@ const Honeymoon = () => {
   };
   useEffect(() => {
     fecthApiData(API);
+    document.title = "Honeymoon";
   }, [reducerValue]);
 
   let findDetails = mediaList;
+  document.title = findDetails[0].country;
   //    console.log(mediaList)
   let Navigate = useNavigate();
   return (
@@ -51,14 +54,14 @@ const Honeymoon = () => {
         <p>
           Discover ancient ruins and relaxing beach resorts and buddhist temples
         </p>
-        <a href="#Tour-Packages">
+        <HashLink to="#Tour-Packages">
           <button className="head-button">
             View All Packages{" "}
             <span class="material-symbols-outlined">
               keyboard_double_arrow_down
             </span>
           </button>
-        </a>
+        </HashLink>
       </div>
       <div className="Thailand-content margin">
         <div className="container">
